@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f6fc;
+    color: #222;
+}
+
+header {
+    background: #171936;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 span {
+    color: #8b83ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.hero {
+    min-height: 420px;
+    background: linear-gradient(120deg, #171936, #5546a8);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #a99fff;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #7567e8;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #5546b8;
+}
+
+.assessment {
+    max-width: 750px;
+    margin: 60px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px #00000012;
+}
+
+.assessment h2, .about h2 {
+    color: #393276;
+    margin-bottom: 15px;
+}
+
+.assessment p {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+form label {
+    display: block;
+    margin: 18px 0 9px;
+    font-weight: bold;
+}
+
+form input[type="text"], form select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.options label {
+    background: #f0efff;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.options input {
+    margin-right: 8px;
+}
+
+form button {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.results {
+    display: none;
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.results h2 {
+    color: #393276;
+    margin-bottom: 20px;
+}
+
+.career-card {
+    background: white;
+    padding: 22px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    border-left: 5px solid #7567e8;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+.career-card h3 {
+    color: #5546a8;
+    margin-bottom: 12px;
+}
+
+.career-card p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.about {
+    text-align: center;
+    padding: 60px 15%;
+    background: #eae9ff;
+    line-height: 1.8;
+}
+
+footer {
+    background: #171936;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .options {
+        grid-template-columns: 1fr;
+    }
+
+    .assessment {
+        margin: 25px 12px;
+        padding: 22px;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Career<span>AI</span></h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#assessment">Assessment</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Discover Your Perfect <span>Career Path</span></h1>
+        <p>Explore your skills, discover your interests and find
+        the career that matches your potential.</p>
+        <a href="#assessment" class="btn">Get Started</a>
+    </div>
+</section>
+
+<section class="assessment" id="assessment">
+    <h2>Career Assessment</h2>
+    <p>Tell us about yourself to discover suitable careers.</p>
+
+    <form id="careerForm">
+        <label>Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label>Educational Qualification</label>
+        <select id="education" required>
+            <option value="">Select qualification</option>
+            <option>B.Tech / B.E</option>
+            <option>B.Sc</option>
+            <option>BCA</option>
+            <option>M.Tech / M.E</option>
+            <option>MCA</option>
+            <option>Other</option>
+        </select>
+
+        <label>Select Your Skills</label>
+        <div class="options">
+            <label><input type="checkbox" value="Python"> Python</label>
+            <label><input type="checkbox" value="Java"> Java</label>
+            <label><input type="checkbox" value="HTML"> HTML/CSS</label>
+            <label><input type="checkbox" value="SQL"> SQL</label>
+            <label><input type="checkbox" value="AI"> Artificial Intelligence</label>
+            <label><input type="checkbox" value="Communication"> Communication</label>
+            <label><input type="checkbox" value="Design"> Designing</label>
+            <label><input type="checkbox" value="Problem Solving"> Problem Solving</label>
+        </div>
+
+        <label>Select Your Interests</label>
+        <select id="interest" required>
+            <option value="">Choose your interest</option>
+            <option value="AI">Artificial Intelligence</option>
+            <option value="Data">Data Science</option>
+            <option value="Web">Web Development</option>
+            <option value="Security">Cybersecurity</option>
+            <option value="Design">UI/UX Design</option>
+            <option value="Business">Business Analytics</option>
+        </select>
+
+        <label>Preferred Work Style</label>
+        <select id="work">
+            <option>Individual Work</option>
+            <option>Team Work</option>
+            <option>Both</option>
+        </select>
+
+        <button type="submit" class="btn">Find My Career</button>
+    </form>
+</section>
+
+<section class="results" id="results">
+    <h2>Your Career Recommendations</h2>
+    <div id="resultContent"></div>
+</section>
+
+<section class="about" id="about">
+    <h2>About CareerAI</h2>
+    <p>CareerAI is a career guidance web application that
+    analyzes students' skills and interests to suggest
+    suitable career opportunities.</p>
+</section>
+
+<footer>
+    <p>© 2026 CareerAI | AI-Powered Career Guidance System</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
